@@ -28,7 +28,6 @@ URxvt*transparent: true
 URxvt*shading:20
 
 URxvt.letterSpace: 0
-
 !######################### Colorscheme settings 
 ########################!
 ! Black baclground + Lightgray text
