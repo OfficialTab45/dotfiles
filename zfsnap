@@ -1,0 +1,4 @@
+#!/bin/sh
+/usr/bin/zfsnap snapshot -a 1d -p _HOURLY_ -r homepool/home
+sleep 30
+/usr/bin/zfsnap destroy -p _HOURLY_ -r homepool/home
