@@ -1,4 +1,8 @@
-#!/bin/sh
-/usr/bin/zfsnap snapshot -a 1d -p _HOURLY_ -r homepool/home
-sleep 30
-/usr/bin/zfsnap destroy -p _HOURLY_ -r homepool/home
+#!/bin/bash
+ZFSNAP=/usr/bin/zfsnap
+OPTIONS='-a 1d -p _HOURLY_ -r'
+DATASET='data/home/tab'
+DESTROY='-p _HOURLY_ -r'
+
+$ZFSNAP snapshot $OPTIONS $DATASET
+$ZFSNAP destroy $DESTROY $DATASET
