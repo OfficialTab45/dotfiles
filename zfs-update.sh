@@ -20,7 +20,7 @@ $ZFS clone zroot/ROOT/default@stable zroot/ROOT/STABLE
 $ZFS set canmount=noauto zroot/ROOT/STABLE
 $ZFS set mountpoint=/ zroot/ROOT/STABLE
 $CP /boot/vmlinuz-linux /boot/vmlinuz-linux-stable
-$CP /boot/initramfs-linux.img /boot/initramfs/linux-stable.img
+$CP /boot/initramfs-linux.img /boot/initramfs-linux-stable.img
 
 ##Update System
 
