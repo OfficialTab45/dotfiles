@@ -11,7 +11,7 @@ PAC=/usr/bin/pacman
 $ZFS destroy -R zroot/ROOT/default@oldstable
 $ZFS rename zroot/ROOT/default@stable zroot/ROOT/default@oldstable
 $ZFS rename zroot/ROOT/STABLE zroot/ROOT/OLDSTABLE
-$CP /boot/vm-linuz-linux-stable /boot/vmlinuz-linux-oldstable
+$CP /boot/vmlinuz-linux-stable /boot/vmlinuz-linux-oldstable
 $CP /boot/initramfs-linux-stable.img /boot/initramfs-linux-oldstable.img
 
 ##Stable
