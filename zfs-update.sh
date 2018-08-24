@@ -31,5 +31,5 @@ $PAC -Syu
 
 $ZFS snapshot zroot/ROOT/default@upgrade
 $DATE >> var/log/upgrade/upgrade.log
-$ZFS diff zroot/ROOT/default@stable zroot/ROOT/default@upgrade >> /varr/log/upgrade/upgrade.log
+$ZFS diff zroot/ROOT/default@stable zroot/ROOT/default@upgrade >> /var/log/upgrade/upgrade.log
 $ZFS destroy zroot/ROOT/default@upgrade
