@@ -15,7 +15,7 @@ $CP /boot/vmlinuz-linux-stable /boot/vmlinuz-linux-oldstable
 $CP /boot/initramfs-linux-stable.img /boot/initramfs-linux-oldstable.img
 
 ##Stable
-ZFS snapshot zroot/ROOT/default@stable
+$ZFS snapshot zroot/ROOT/default@stable
 $ZFS clone zroot/ROOT/default@stable zroot/ROOT/STABLE
 $ZFS set canmount=noauto zroot/ROOT/STABLE
 $ZFS set mountpoint=/ zroot/ROOT/STABLE
