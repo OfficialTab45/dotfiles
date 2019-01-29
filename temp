@@ -1,1 +1,0 @@
-sensors -A | grep -oP '^Core.+?  \+\K\d+' | awk '{k+=$1}END{print }'
