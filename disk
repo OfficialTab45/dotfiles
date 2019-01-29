@@ -1,0 +1,1 @@
+df -Th | grep /dev/sdb1 | awk '{print $5}'
